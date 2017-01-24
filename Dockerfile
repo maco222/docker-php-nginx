@@ -21,3 +21,6 @@ RUN echo "xdebug.idekey=\"PHPSTORM\"" >> /etc/php/7.0/mods-available/xdebug.ini
 RUN echo "xdebug.remote_port=9001" >> /etc/php/7.0/mods-available/xdebug.ini
 
 RUN /usr/sbin/phpenmod xdebug
+
+RUN echo 'alias sf="php app/console"' >> ~/.bashrc
+RUN echo 'alias sf3="php bin/console"' >> ~/.bashrc
