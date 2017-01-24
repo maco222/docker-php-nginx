@@ -4,7 +4,11 @@ RUN apt-get -y update && apt-get install -y aptitude
 COPY conf/ /opt/docker/
 
 RUN /usr/local/bin/apt-install \
-        php7.0-xdebug
+        php7.0-xdebug \
+        acl \
+        openjdk-8-jre \
+        nodejs \
+        node-less
 
 RUN echo "error_reporting = E_ALL" >> /etc/php/7.0/mods-available/xdebug.ini
 RUN echo "display_startup_errors = On" >> /etc/php/7.0/mods-available/xdebug.ini
