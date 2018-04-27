@@ -10,7 +10,8 @@ RUN /usr/local/bin/apt-install \
         nodejs \
         node-less \
         bash-completion \
-        npm 
+        npm \
+			  vim
 
 RUN pecl install xdebug-2.5.0
 
