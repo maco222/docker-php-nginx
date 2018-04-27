@@ -2,6 +2,7 @@ FROM webdevops/php-nginx:7.1
 RUN apt-get -y update && apt-get install -y aptitude
 
 COPY conf/ /opt/docker/
+COPY conf/.inputrc /root/
 
 RUN /usr/local/bin/apt-install \
 #        php71-xdebug \
