@@ -32,3 +32,6 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN echo 'alias sf="php app/console"' >> ~/.bashrc
 RUN echo 'alias sf3="php bin/console"' >> ~/.bashrc
 RUN echo 'if [ -f /etc/bash_completion ]; then . /etc/bash_completion; fi' >> ~/.bashrc
+
+ENV term=rxvt
+ENV TERM=rxvt
